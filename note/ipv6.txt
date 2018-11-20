@@ -1,4 +1,4 @@
-```
+
 IPv6单播地址有以下六种类型：
 
 1－Aggregate Global Unicast Address   2xxx:xxxxx/3 - 3FFF: :FFFF
@@ -9,5 +9,3 @@ IPv6单播地址有以下六种类型：
 4－Unspecified Address　　            0:0:0:0:0:0:0:0/128 => ::/128
 5－Loopback Address 　　　            0:0:0:0:0:0:0:1/128 => ::1/128
 6－IPv4 Compatible Address            ::192.168.30.1 => ::C0A8:1E01
-
-```
