@@ -1,4 +1,4 @@
-```c
+
 struct ether_addr 
 {
     uint8_t addr_bytes[6]; /**< Address bytes in transmission order */
@@ -61,5 +61,3 @@ struct udp_hdr
     uint16_t dgram_len;   /**< UDP datagram length */
     uint16_t dgram_cksum; /**< UDP datagram checksum */
 };
-
-```
