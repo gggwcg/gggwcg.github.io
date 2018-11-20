@@ -1,4 +1,3 @@
-```c
 
 /* Protocols */
 
@@ -13,5 +12,3 @@
 #define IPPROTO_ND      77  /* UNOFFICIAL net disk proto */
 #define IPPROTO_RAW     255 /* raw IP packet */
 #define IPPROTO_MAX     256
-
-```
