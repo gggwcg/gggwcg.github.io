@@ -46,7 +46,8 @@ class FileEventHandler(FileSystemEventHandler):
 if __name__ == "__main__":
     observer = Observer()
     event_handler = FileEventHandler()
-    observer.schedule(event_handler,"d:/dcm",True)
+    dir = "d://watch//"
+    observer.schedule(event_handler,dir,True)
     observer.start()
     try:
         while True:
