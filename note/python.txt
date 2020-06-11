@@ -9,6 +9,23 @@ def get_current_dir():
 	return parent_path
 
 
+#file_clean-------------------------------------------------------------------------------
+import os
+
+#清理dir目录下的日志文件, 保留count个
+def file_clean(dir, count):
+	l_files = os.listdir(dir)
+	dict = {}
+	for f in l_files:
+		full_path = os.path.join(dir, f)
+		ctime = os.path.getctime(full_path)
+		dict[full_path] = ctime
+	l_files_sort = sorted(dict.items(), key=lambda item: item[1]) #按照ctime排序
+	if len(l_files_sort) > count:
+		for i in range(len(l_files_sort) - count):
+			os.remove(l_files_sort[i][0])
+
+
 #watchdog-------------------------------------------------------------------------------
 #pip install watchdog
 from watchdog.observers import Observer
