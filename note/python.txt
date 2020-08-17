@@ -1,4 +1,11 @@
 
+#拆分路径,文件名,后缀----------------------------------------------------------------------------
+import os
+file_path = "D:/test/test.py"
+(filepath, tempfilename) = os.path.split(file_path)
+(filename, extension) = os.path.splitext(tempfilename)
+
+
 #get_current_dir-------------------------------------------------------------------------------
 import os
 
