@@ -1,6 +1,6 @@
 linux 系统 errno.h错误码
- 分类： LINUX2016-10-12 16:19:38
- 内核源码中
+
+内核源码中
 #ifndef _ARM_ERRNO_H
 #define _ARM_ERRNO_H
 
